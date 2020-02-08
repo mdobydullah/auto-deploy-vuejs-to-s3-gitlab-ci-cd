@@ -24,8 +24,6 @@ build_app:
 production:
    image: python:alpine
    stage: deploy
-   only:
-      - master
    script:
       - pip install awscli
       - aws s3 sync ./dist s3://YOUR_BUCKET_NAME
