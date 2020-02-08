@@ -28,4 +28,4 @@ production:
       - master
    script:
       - pip install awscli
-      - aws s3 sync ./dist s3://gitlab-mnp
+      - aws s3 sync ./dist s3://YOUR_BUCKET_NAME
